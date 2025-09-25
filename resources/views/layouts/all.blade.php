@@ -29,8 +29,11 @@
     </script>
 </head>
 <body>
+    @include("allicon")
     <main id="main">
         @yield('main')
+        <x-footer></x-footer>
     </main>
+    <x-menues.side-menu></x-menues.side-menu>
 </body>
 </html>

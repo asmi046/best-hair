@@ -3,7 +3,7 @@
 .icon-menu {
     position: -webkit-sticky;
     position: sticky;
-    width: 31.8px;
+    width: 25.8px;
     height: 23.2px;
     cursor: pointer;
     z-index: 5;
@@ -11,7 +11,7 @@
 
   .icon-menu span {
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: 0px;
     width: 100%;
     height: 2px;
@@ -50,5 +50,5 @@
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    bottom: 12px;
+    bottom: 7px;
   }

@@ -94,9 +94,10 @@
 
     .icon-menu {
         margin: auto;
-        width:25px;
+        width:20px;
+        height: 18px;
         span {
-            background-color: white;
+            background-color: $black_color;
         }
     }
 }

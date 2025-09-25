@@ -1,0 +1,21 @@
+.contacts {
+    .col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .map_in_page {
+        margin: 40px 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .contacts {
+        .colls {
+            flex-direction: column;
+            gap:20px
+        }
+    }
+}

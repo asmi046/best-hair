@@ -8,19 +8,22 @@
 @use "standart";
 @use "form/all-form";
 @use "elements/all-elements";
+@use "cols";
 
 @use "current";
 
 @use "modal";
+@use "header";
+@use "concept";
+@use "price";
+@use "contacts";
+@use "footer";
 
 // Схема с сайдбаром
 // @use "sidebar-schem";
 
 // Боковое беню
-// @use "menues";
-
-// Иконка бургера
-// @use "burger-icon";
+@use "menues";
 
 
 @use "cookie";

@@ -1,5 +1,108 @@
 @use 'vars' as *;
 
-header{
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-10deg);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.1) rotate(5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
 
+header{
+    position: relative;
+    background: url(../img/main_bg_top.webp) no-repeat top center/cover;
+    &.main {
+        height: calc(100vh - 40px);
+        display: flex;
+        flex-direction: column;
+
+        .header__control {
+            display: flex;
+            flex-direction: column;
+            gap:40px;
+            align-items: center;
+            margin-top: 20%;
+            animation: fadeInScale 2s ease-out;
+
+            .button_wrapper {
+                display: flex;
+                gap: 20px;
+                .button {
+                    min-width: calc(220px - 60px);
+                }
+            }
+
+            .logo_big {
+                width: 430px;
+            }
+        }
+
+        .arrow {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 18px;
+            height: 100px;
+            animation: bounce 3s infinite;
+            background: url("../img/icon/m_h_arrow.svg") no-repeat center center;
+        }
+    }
+
+    .header__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        }
+
+        .header__left .header__logo-img {
+        width: 150px;
+        height: auto;
+        display: block;
+        }
+
+    .header__right {
+        display: flex;
+        justify-content: flex-end;
+        flex:1;
+        border-bottom: 1px solid $main_color;
+    }
+
+    .header__nav {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        ul {
+            display: flex;
+            gap: 20px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    header .header__wrapper {
+        display: none;
+    }
+
+    header.main .header__control {
+        width:80%;
+        margin: 30% auto auto auto;
+        .logo_big {
+            width: 100%;
+        }
+        .button_wrapper {
+            flex-direction: column;
+        }
+
+    }
 }

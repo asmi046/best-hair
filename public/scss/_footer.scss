@@ -1,5 +1,32 @@
 @use 'vars' as *;
 
 footer {
+    .container {
+        padding-top:40px;
+        border-top: 1px solid $main_color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo_small {
+            width: 150px;
+            margin: 20px auto;
+        }
 
+        .footer__nav {
+            ul {
+                display: flex;
+                gap: 20px;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    footer .container .footer__nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }

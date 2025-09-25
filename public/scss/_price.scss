@@ -1,0 +1,25 @@
+@use 'vars' as *;
+
+.price {
+    details summary {
+        background-color: unset;
+        border:none;
+        border-radius: 0;
+        color: $main_color;
+        font-family: $head_fonts;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 400;
+        width:100%;
+        padding: 10px 0;
+        cursor:pointer;
+        &::before {
+            background-color: $black_color;
+            background-image: url('../img/icon/price-arrow.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: '';
+        }
+    }
+}
