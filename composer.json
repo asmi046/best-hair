@@ -13,7 +13,8 @@
         "asmi046/site_skelet": "^1.0",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "moonshine/moonshine": "^3.16"
+        "moonshine/moonshine": "^3.16",
+        "moonshine/ru": "^1.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

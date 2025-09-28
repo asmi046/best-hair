@@ -18,6 +18,8 @@ class DatabaseSeeder extends Seeder
                 SeoDataSeeder::class,
                 ContactSeeder::class,
                 MenuSeeder::class,
+                PriceSeeder::class,
+                UserSeeder::class,
             ]
         );
         // User::factory(10)->create();

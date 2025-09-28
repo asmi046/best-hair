@@ -1,25 +1,55 @@
 @use 'vars' as *;
 
 .price {
-    details summary {
-        background-color: unset;
-        border:none;
-        border-radius: 0;
-        color: $main_color;
-        font-family: $head_fonts;
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 400;
-        width:100%;
-        padding: 10px 0;
-        cursor:pointer;
-        &::before {
-            background-color: $black_color;
-            background-image: url('../img/icon/price-arrow.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            content: '';
+    details {
+        display: flex;
+        flex-direction: column;
+
+        .response {
+            padding: 20px 0;
+
+            .price_subtitle {
+                font-family: $head_fonts;
+                font-size: 18px;
+                font-weight: 400;
+                max-width: 500px;
+                color: $main_color;
+            }
+
+            .sub_title {
+                    max-width: 500px;
+                }
+
+            .price_item {
+                display: flex;
+                justify-content: space-between;
+                font-family: $main_fonts;
+                padding: 10px 0;
+                max-width: 500px;
+                border-bottom: 1px solid $gray_bg_color;
+            }
+        }
+
+        summary {
+            background-color: unset;
+            border:none;
+            border-radius: 0;
+            color: $main_color;
+            font-family: $head_fonts;
+            text-transform: uppercase;
+            font-size: 22px;
+            font-weight: 400;
+            width:100%;
+            padding: 10px 0;
+            cursor:pointer;
+            &::before {
+                background-color: $black_color;
+                background-image: url('../img/icon/price-arrow.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                content: '';
+            }
         }
     }
 }

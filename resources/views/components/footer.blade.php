@@ -2,12 +2,7 @@
     <div class="container">
 
         <nav class="footer__nav">
-                <ul>
-                    <li>Концепция</li>
-                    <li>Прайс</li>
-                    <li>О компании</li>
-                    <li>Контакты</li>
-                </ul>
+            <x-menues.puncts></x-menues.puncts>
         </nav>
 
         <img src="{{ asset('img/logo.svg') }}" alt="Окрашивание волос в Курске" class="logo_small">

@@ -18,6 +18,7 @@
 header{
     position: relative;
     background: url(../img/main_bg_top.webp) no-repeat top center/cover;
+
     &.main {
         height: calc(100vh - 40px);
         display: flex;

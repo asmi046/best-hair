@@ -20,7 +20,6 @@
                 <a href="#coll" class="button button_black">Прайс</a>
                 <a href="#coll" class="button ">Связаться с нами</a>
             </div>
-
         </div>
 
         <div class="arrow"></div>
@@ -75,28 +74,7 @@
 <section>
     <div class="container">
         <h2>Прайс</h2>
-        <div class="price">
-            <details>
-                <summary>Завивка волос</summary>
-                <div class="response">
-
-                </div>
-            </details>
-
-            <details>
-                <summary>Окрашивание</summary>
-                <div class="response">
-
-                </div>
-            </details>
-
-            <details>
-                <summary>Стрижка</summary>
-                <div class="response">
-
-                </div>
-            </details>
-        </div>
+        <x-prices></x-prices>
     </div>
 </section>
 
@@ -111,23 +89,7 @@
     </div>
 </section>
 
-<section>
-    <div class="container contacts">
-        <h2>Связаться с нами</h2>
-        <div class="colls ">
-            <div class="col">
-                <x-a-icon href="tel:+7{{ phone_format('+7 920 710 08 80') }}" icon="phone_icon">+7 920 710 08 80</x-a-icon>
-                <x-a-icon href="mailto:info@the-best.ru" icon="mail_icon">info@the-best.ru</x-a-icon>
-            </div>
-            <div class="col">
-                <x-div-icon icon="time_icon">с 10:00 до  22:00</x-a-icon>
-                <x-div-icon icon="adr_icon">г. Курск ул. Карла-Маркса, д. 66</x-a-icon>
-            </div>
-        </div>
-
-        <x-map.map-in-page name="Денталика" :geo="'51.75749107225994,36.18305249999999'" :adres="'г. Курск ул. Карла-Маркса, д. 66'" :phone="'+7 920 710 08 80'"></x-map.map-in-page>
-    </div>
-</section>
+<x-contacts-section></x-contacts-section>
 
 @endsection
 

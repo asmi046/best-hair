@@ -7,12 +7,7 @@
     <div class="header__right">
         <div class="header__menu">
             <nav class="header__nav">
-                <ul>
-                    <li>Концепция</li>
-                    <li>Прайс</li>
-                    <li>О компании</li>
-                    <li>Контакты</li>
-                </ul>
+                <x-menues.puncts></x-menues.puncts>
             </nav>
         </div>
     </div>

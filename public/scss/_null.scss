@@ -1,3 +1,4 @@
+@use 'vars' as *;
 body {
     margin: 0;
     padding: 0;
@@ -17,8 +18,11 @@ textarea {
 }
 
 a {
-    color:black;
+    color:white;
     text-decoration: none;
+    &:hover {
+        color: $main_color;
+    }
 }
 
 a:hover {

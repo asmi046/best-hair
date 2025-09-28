@@ -19,6 +19,7 @@ class Puncts extends Component
         $this->puncts = Cache::rememberForever('menu_'.$name, function () use ($name) {
             return Menu::where('menu_name', $name)->orderBy("order", "ASC")->get();
         });
+        // dd($this->puncts);
     }
 
     /**
