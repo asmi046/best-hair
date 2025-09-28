@@ -37,6 +37,7 @@ use MoonShine\UI\Components\{Breadcrumbs,
     Layout\TopBar,
     Layout\Wrapper,
     When};
+use App\MoonShine\Resources\PriceResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -53,7 +54,9 @@ final class MoonShineLayout extends AppLayout
              MenuItem::make('Контакты', ContactResource::class)->icon('chat-bubble-bottom-center-text'),
              MenuItem::make('Меню', MenuResource::class)->icon('bars-3-bottom-left'),
              MenuItem::make(static fn() => __('SEO'), SeoDataResource::class)->icon('chart-bar-square'),
+             MenuItem::make('Цены', PriceResource::class)->icon('currency-dollar'),
             ...parent::menu(),
+
         ];
     }
 

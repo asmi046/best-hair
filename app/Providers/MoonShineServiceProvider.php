@@ -14,6 +14,7 @@ use App\MoonShine\Resources\MoonShineUserRoleResource;
 use MoonShine\Contracts\Core\DependencyInjection\CoreContract;
 use MoonShine\Laravel\DependencyInjection\MoonShineConfigurator;
 use MoonShine\Contracts\Core\DependencyInjection\ConfiguratorContract;
+use App\MoonShine\Resources\PriceResource;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -31,6 +32,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 ContactResource::class,
                 MoonShineUserResource::class,
                 MoonShineUserRoleResource::class,
+                PriceResource::class,
             ])
             ->pages([
                 ...$config->getPages(),
